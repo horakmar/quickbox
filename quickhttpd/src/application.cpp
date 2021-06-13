@@ -88,7 +88,7 @@ qf::core::sql::Connection Application::sqlConnetion()
 
 void Application::generateHtml()
 {
-  if(cliOptions()->profile() == "startlitst" || cliOptions()->profile() == "both") {
+  if(cliOptions()->profile() == QLatin1String("startlitst") || cliOptions()->profile() == QLatin1String("both")) {
 		quickevent::core::exporters::StageStartListHtmlExporter exp;
 		exp.setSqlConnection(sqlConnetion());
 		exp.setOutDir(cliOptions()->htmlDir());
@@ -96,7 +96,7 @@ void Application::generateHtml()
 		exp.setClassesNotLike(cliOptions()->classesNotLike());
 		exp.generateHtml();
 	}
-  if(cliOptions()->profile() == "results" || cliOptions()->profile() == "both") {
+  if(cliOptions()->profile() == QLatin1String("results") || cliOptions()->profile() == QLatin1String("both")) {
 		quickevent::core::exporters::StageResultsHtmlExporter exp;
 		exp.setSqlConnection(sqlConnetion());
 		exp.setOutDir(cliOptions()->htmlDir());
