@@ -14,6 +14,7 @@ public:
 
 	CLIOPTION_GETTER_SETTER2(QString, "application.htmlDir", h, setH, tmlDir)
 	CLIOPTION_GETTER_SETTER2(int, "application.refreshTime", r, setR, efreshTime)
+	CLIOPTION_GETTER_SETTER2(QString, "application.profile", h, setP, rofile)
 	CLIOPTION_GETTER_SETTER2(QString, "event.name", e, setE, ventName)
 	CLIOPTION_GETTER_SETTER2(int, "event.stage", s, setS, tage)
 	CLIOPTION_GETTER_SETTER2(QString, "event.classesLike", c, setC, lassesLike)
