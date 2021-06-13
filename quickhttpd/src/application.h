@@ -35,7 +35,7 @@ public:
 	AppCliOptions* cliOptions() {return m_cliOptions;}
 	qf::core::sql::Connection sqlConnetion();
 
-  QString profile();
+	QString profile();
 private:
 	void generateHtml();
 private:
