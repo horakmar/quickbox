@@ -3,6 +3,7 @@
 AppCliOptions::AppCliOptions(QObject *parent)
 	: Super(parent)
 {
+	addOption("profile").setType(QVariant::String).setNames("--profile").setDefaultValue("both").setComment("Rendering profile to use (results|startlists|both)");
 	addOption("application.htmlDir").setType(QVariant::String).setNames("--html-dir").setDefaultValue("./html").setComment("directory where HTML pages will be stored");
 	addOption("application.refreshTime").setType(QVariant::Int).setNames("--refresh-time").setDefaultValue(60*1000).setComment("refresh time in msec");
 	addOption("event.name").setType(QVariant::String).setNames("-e", "--event");
